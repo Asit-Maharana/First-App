@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="106dp"
+        android:layout_height="98dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/rounded_corner"
+        app:srcCompat="@android:drawable/btn_star_big_on"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PowerShop"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="Name" />
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="8dp"
+            android:background="@drawable/edt_rounded_corner"
+            android:textSize="25dp"
+            android:hint="Enter User Id"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            android:textSize="20sp"
+            android:text="Password" />
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="25sp"
+            android:padding="8dp"
+            android:background="@drawable/edt_rounded_corner"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:radius="20dp"
+            android:text=" Login "
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Forgot password"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="SignIn"
+            android:textAlignment="textEnd"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
